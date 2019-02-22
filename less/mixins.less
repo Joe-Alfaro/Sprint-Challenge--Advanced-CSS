@@ -1,1 +1,18 @@
 // Mixins Here
+.center(){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-button (@color1, @color2){
+    .center();
+
+    background: @color2;
+    border-radius: 5px;
+    color: @color1;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 40px;
+    max-width: 100px;
+}

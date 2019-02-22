@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .main-header-image {
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +61,17 @@
       }
 
       .btn {
+        .custom-button(white, @btn-bg-color);
+        
+        p{
+          margin: 0;
+        }
+
+        &:hover {
+          .custom-button(@btn-bg-color, white);
+          border: 1px solid @btn-bg-color;
+          cursor: pointer;
+        }
       }
     }
 
