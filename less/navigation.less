@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-bar-container {
+    background: @nav-bg;
+    height: 100px;
+    width: 100vw;
+
+    .nav-bar {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 800px;
+        width: 100%;
+
+        .center();
+        flex-direction: column;
+
+        nav {
+            @media (max-width: 700px) {
+                width: 90%;
+            }
+
+            .center();
+            width: 50%;
+            
+
+            a {
+                color: @nav-font;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+    }
+}
